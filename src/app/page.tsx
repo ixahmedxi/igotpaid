@@ -79,7 +79,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-6">
+      <div className="px-6 mx-auto max-w-lg">
         <label htmlFor="monies" className="inline-block pt-12 pb-2 lg:pt-24">
           The amount:
         </label>
