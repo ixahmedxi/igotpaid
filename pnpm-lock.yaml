@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/ibm-plex-sans':
+    specifier: ^5.0.9
+    version: 5.0.9
   '@types/node':
     specifier: 20.5.1
     version: 20.5.1
@@ -96,6 +99,10 @@ packages:
   /@eslint/js@8.47.0:
     resolution: {integrity: sha512-P6omY1zv5MItm93kLM8s2vr1HICJH8v0dvddDhysbIuZ+vcjOHg5Zbkf1mTkcmi2JA9oBG2anOkRnW8WJTS8Og==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: false
+
+  /@fontsource/ibm-plex-sans@5.0.9:
+    resolution: {integrity: sha512-aCHRzzfCS+2WQsNN83terse7GKU09o5Fv4tbEOn7lKj9iUCC5w5huAhcXHzI7d2TqAfj5s0FoNBhspiX0dNoWA==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.10:
