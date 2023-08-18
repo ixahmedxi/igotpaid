@@ -6,8 +6,8 @@ export default function Home() {
   const [monies, setMonies] = useState(762.92);
 
   return (
-    <main className="flex flex-col justify-center items-center w-screen h-screen">
-      <div className="flex flex-col gap-6 pb-24 text-center">
+    <main className="flex flex-col justify-center h-screen items-centerw-screen">
+      <div className="flex flex-col gap-6 px-6 pb-12 text-center lg:px-0 lg:pb-24">
         <h1 className="text-5xl font-black">You got paid!</h1>
         <p>
           Well not really, but now you can fake flex on Twitter...I mean X, that
@@ -25,7 +25,7 @@ export default function Home() {
           </a>
         </p>
       </div>
-      <div className="flex gap-2 justify-center py-4 w-full border-t border-b border-gray-200">
+      <div className="flex gap-2 justify-center py-4 px-6 w-full border-t border-b border-gray-200">
         <div>
           <svg
             height="24"
@@ -79,8 +79,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
-        <label htmlFor="monies" className="inline-block pt-24 pb-2">
+      <div className="px-6">
+        <label htmlFor="monies" className="inline-block pt-12 pb-2 lg:pt-24">
           The amount:
         </label>
         <input
