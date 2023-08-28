@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useMonies } from "@/hooks/useMonies";
 
 export default function Home() {
-  const [monies, setMonies] = useState(762.92);
+  const { monies, moniesFormatted, setMonies } = useMonies(762.92);
 
   return (
     <main className="flex flex-col justify-center h-screen items-centerw-screen">
@@ -74,7 +74,7 @@ export default function Home() {
         <div>
           <h3 className="font-medium pb-[2px]">You got paid!</h3>
           <p className="text-gray-500">
-            ${monies} has been deposited into your account.
+            {moniesFormatted} has been deposited into your account.
           </p>
         </div>
       </div>
@@ -85,6 +85,7 @@ export default function Home() {
         </label>
         <input
           min="200"
+          step={0.01}
           className="py-1.5 px-3 w-full bg-gray-100 rounded-lg border border-gray-300 focus:border-gray-600 focus:outline-none"
           type="number"
           placeholder="762.92"
